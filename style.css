@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+
+/******************************************************/
+/*********************HEADER***************************/
+/******************************************************/
+
+header {
+    display: flex;
+    justify-content: center; /* Centre le container dans le header */
+    align-items: center;
+    /* Assurez-vous que le header a une largeur de 100% si ce n'est pas déjà le cas */
+    width: 100%;
+    margin-top: 72px;
+}
+
+.menu {
+    display: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Répartit l'espace entre le logo et la ul */
+    align-items: center;
+    width: 1110px; /* La largeur maximale de votre contenu */
+}
+
+.logo {
+    width: 64.09px;
+    height: 39.9px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0; /* Retire la marge par défaut de la ul */
+    gap: 20px; /* Ajoute un espacement entre les li si nécessaire */
+    font-family: "Inter", sans-serif;
+}
+
+ul li:last-child {
+    margin-right: 0; /* Enlève la marge du dernier élément pour éviter un espacement supplémentaire à droite */
+  }
+
+
+/******************************************************/
+/***********************MAIN***************************/
+/******************************************************/
+
+
+.containerTwo {
+    display: grid;
+    grid-template-columns: 730px;
+    grid-template-rows:300px;
+    grid-template-areas:
+    "a a b"
+    "a a b"
+    ;
+    width: 1110px;
+    margin: 0 auto;
+    padding-top: 60px;
+    gap: 20px;
+}
+
+.a {
+    display: grid;
+    grid-area: a;
+    grid-template-areas: 
+    "div1 div1"
+    "div2 div3";
+}
+
+.b {
+    grid-area: b;
+    margin: 0 auto;
+    padding-left: 30px;
+    background-color: #00001A;
+}
+
+.div1 {
+    grid-area: div1;
+}
+
+.div2 {
+    grid-area: div2;
+    width: 350px;
+    height: 182px;
+}
+
+.div3 {
+    grid-area: div3;
+    width: 350px;
+    height: 181px;
+}
+
+
+.banniere {
+    width: 730px;
+    height: 300px;
+}
+
+
+.titleBoxOne {
+    font-weight: 800;
+    font-size: 56px;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+.phraseBoxTwo {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    font-family: "Inter", sans-serif;
+}
+
+button {
+    background: #F15D51;
+    color: white;
+    text-transform: uppercase;
+    width: 185px;
+    height: 48px;
+    border: none;
+
+}
+
+.b h1 {
+font-family: "Inter", sans-serif;
+font-size: 40px;
+font-weight: 700;
+line-height: 40px;
+text-align: left;
+color: #E9AA52;
+
+}
+
+.b h2 {
+
+font-family: "Inter", sans-serif;
+font-size: 20px;
+font-weight: 800;
+line-height: 24px;
+text-align: left;
+color: white;
+
+}
+
+
+.b p {
+font-family: "Inter", sans-serif;
+font-size: 15px;
+font-weight: 400;
+line-height: 26px;
+text-align: left;
+color: #C5C6CE;
+
+}
+
+hr {
+   width: 302px;
+}
+
+/******************************************************/
+/**********************3 PART**************************/
+/******************************************************/
+
+.containerThree {
+    display: grid;
+    grid-template-areas:
+    "c d e"
+    ;
+    margin: 0 auto;
+    width: 1110px;
+    gap: 30px;
+    padding-top: 50px;
+}
+
+.c img {
+    width: 100px;
+    height: 127px;
+}
+.d img {
+    width: 100px;
+    height: 127px;
+}
+.e img {
+    width: 100px;
+    height: 127px;
+}
+
+.c {
+    grid-area: c;
+    display: grid;
+    grid-template-areas:
+    "ab ba" ;
+    gap: 30px;
+}
+
+.d {
+    grid-area: d;
+    display: grid;
+    grid-template-areas:
+    "ab ba" ;
+    gap: 30px;
+}
+
+.e {
+    grid-area: e;
+    display: grid;
+    grid-template-areas:
+    "ab ba" ;
+    gap: 30px;
+}
+
+.ab {
+    grid-area: ab;
+    margin: 0 auto;
+
+}
+
+.ba {
+    grid-area: ba;
+    margin: 0 auto;
+}
+
+.ba h1 {
+font-family: "Inter", sans-serif;
+font-size: 32px;
+font-weight: 700;
+line-height: 32px;
+text-align: left;
+color: #C5C6CE;
+margin: 0;
+
+}
+
+
+.ba h2 {
+font-family: "Inter", sans-serif;
+font-size: 18px;
+font-weight: 800;
+line-height: 24px;
+text-align: left;
+color: #00001A;
+margin: 0;
+
+}
+
+.ba p {
+font-family: "Inter", sans-serif;
+font-size: 15px;
+font-weight: 400;
+line-height: 26px;
+text-align: left;
+color: #5E607A;
+margin: 0;
+
+}
+
+/******************************************************/
+/**********************MOBILE**************************/
+/******************************************************/
+
+@media screen and (max-width: 375px) {
+    
+    
+    /************************************************/
+    /*******************HEADER***********************/
+    /************************************************/
+    
+    ul {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    header {
+        display: flex;
+        justify-content: center; /* Centre le container dans le header */
+        align-items: center;
+    }
+
+    .container {
+        width: 343px;
+        height: 28px;
+    }
+
+    .logo {
+        width: 44.98px;
+        height: 28px;
+    }
+
+    /************************************************/
+    /*********************MAIN***********************/
+    /************************************************/
+
+
+    .banniere {
+        width: 343px;
+        height: 300px;
+    }
+
+    .containerTwo {
+        display: block;
+        width: 343px;
+        height: 636px;
+    }
+
+    .phraseBoxTwo {
+        padding-top: 30px;
+    }
+
+    .a {
+        display: block;
+    }
+
+    .b {
+        display: block;
+        width: 302px;
+        height: 441px;
+        margin: 0;
+    }
+
+    /************************************************/
+    /*******************3 PART***********************/
+    /************************************************/
+    
+    .containerThree {
+        width: 343px; /* Largeur définie pour correspondre au design mobile */
+        margin: 0 auto; /* Centre le conteneur */
+        padding-top: 600px; /* Ajuster selon votre mise en page */
+        display: block;
+    }
+
+    .c, .d, .e {
+        margin-bottom: 20px; /* Ajoutez un espace entre les éléments */
+        display: grid;
+    }
+
+    .ab, .ba {
+        width: 100%; /* Assurez-vous que l'image et le contenu remplissent le conteneur */
+        margin: 0 auto; /* Centre les enfants dans leur conteneur */
+    }
+
+    .ab img {
+        width: 100px;
+        height: 129px;
+    }
+
+    .ba h1, .ba h2, .ba p {
+        text-align: center; /* Centre le texte pour les titres et paragraphes */
+        /* Ajoutez tout padding/margin nécessaire pour l'espacement */
+    }
+
+    /* Assurez-vous que le titre h1 ne dépasse pas la largeur et permette le retour à la ligne si nécessaire */
+    .ba h1 {
+        word-wrap: break-word;
+        hyphens: auto;
+    }
+}
