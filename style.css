@@ -302,8 +302,9 @@ margin: 0;
     .banniere {
         width: 343px;
         height: 300px;
+        object-fit: cover;
     }
-
+    
     .containerTwo {
         display: block;
         width: 343px;
